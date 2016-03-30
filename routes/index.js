@@ -92,6 +92,11 @@ var checkCid = function(id,callback){
 //-----------------------------------------
 
 
+router.get('/', function(req, res, next) {
+  res.send('respond with a resource');
+});
+
+
 router.get('/api/request', function(req, res, next) {
 	var id = parseInt(req.query.connId);
 	var time = parseInt(req.query.timeout);
